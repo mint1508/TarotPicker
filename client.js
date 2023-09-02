@@ -106,6 +106,6 @@ btn.addEventListener("click",function(e){
    //your handler here
   let numberCardToPick = document.querySelector('#numCard')?.value || 3;
     numberCardToPick = parseInt(`${numberCardToPick}`);
-  const randomCards = pickRandomCards(numCardsToPick);
+  const randomCards = pickRandomCards(numberCardToPick);
   document.querySelector('#result').value = randomCards.join('\n');
 },false);
